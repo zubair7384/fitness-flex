@@ -290,6 +290,9 @@ a{
                 height: 10vh;
                 
                     }
+                    .card{
+                        margin-left: 2.6rem;
+                    }
                 }
         @media screen and (max-width: 375px){
             #footer{
