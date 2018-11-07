@@ -1,0 +1,318 @@
+/*style*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    
+}
+.parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+  }
+#header{
+    display: flex;
+    background-color: #373331;
+    justify-content: space-between;
+    flex-basis: 100%;
+    
+}
+
+.logo{
+    padding-left: 3rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    
+}
+.logo-text > p{
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 4.4rem;
+    margin: 0;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav{
+    flex: 3;
+}
+.nav > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    letter-spacing: .08rem;
+    line-height: 2.5rem;
+}
+a{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Sarala', sans-serif;
+}
+
+.nav > ul > li {
+    padding: 1rem;  
+    
+}
+.nav > ul > li:hover {
+     
+    background-color: #b73535;
+    transition: 0.8s;
+}
+
+.cards {
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+
+  }
+  .card {
+    flex: 0 0 200px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 1.5px 1.5px 4px 0px  rgba(0,0,0,0.3);
+    border-radius: .25rem;
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .texts h3{
+    font-family: 'Sarala', sans-serif; 
+    color: #1d2323;
+    font-size: 1.2rem;
+    margin:0 3px;
+    margin-top: 1rem;
+}
+  .texts p{
+    font-family: 'Sarala', sans-serif; 
+    color: #1d2323;
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin: 1rem 0;}
+  .card .texts { 
+    padding: 0 20px 20px;
+  }
+  .card .texts > button {
+    background: #373331;
+    font-family: 'Sarala', sans-serif; 
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: .25rem;
+    }
+    .card .texts > button:hover {
+        background: #b73535;
+        transition: .7s;
+        
+        } 
+        .Site {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+          }
+          
+          .Site-content {
+            flex: 1;
+          }
+#footer{
+    display: flex;
+    justify-content: space-between;
+    background:  #373331;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+    height: 10vh;
+    line-height: 2.7rem;
+   
+        }
+        #footer > p{
+            margin-top: .8rem;
+        }
+        .icons{
+            display: flex;
+            justify-content: flex-start;
+            padding: 0 1rem;
+            letter-spacing: 1rem;
+            font-size: 1.6rem;
+            line-height: 1rem;
+            cursor: pointer;
+
+        }
+        .icons > ul{
+            display: flex;
+            margin-top: 1.3rem;
+        }
+        .icons > ul >li{
+            display: flex;
+            
+        }
+
+
+@media screen and (max-width: 812px){
+    #footer{
+        justify-content: space-around;
+        height: 15vh;
+        line-height: 2rem;
+        padding:0;
+            }
+            .icons{
+                padding: 0;
+                font-size: 1.2rem;
+                line-height: .9rem;
+            }
+        }
+
+@media screen and (max-width: 1366px){
+    #footer{
+        justify-content: space-around;
+        height: 10vh;
+        
+            }
+        }
+@media screen and (max-width: 1024px){
+    #footer{
+        justify-content: space-around;
+        height: 8vh;
+            }
+        }
+@media screen and (max-width: 823px){
+    #footer{
+        justify-content: space-around;
+        height: 16vh;
+        
+            }
+        }
+        @media screen and (max-width: 812px){
+            #footer{
+                justify-content: space-around;
+                height: 15vh;
+                
+                    }
+                }
+                @media screen and (max-width: 768px){
+                    #footer{
+                        justify-content: space-around;
+                        height: 5vh;
+                        
+                            }
+                }
+                @media screen and (max-width: 700px){
+                    .parent{
+                        position: static;
+                    }
+                    #header{
+                    flex-direction: column;
+                    
+                    }
+                    .nav > ul{
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 0;
+                    }
+                    .nav > ul > li{
+                        justify-content: center;
+                        padding: 0.2;
+                        
+                
+                    }
+                    .nav > ul > li > a{
+                        justify-content: center;
+                        padding: 0;
+                        
+                
+                    }
+                   
+                    .logo{
+                        text-align: center;
+                        padding:0;
+                        padding-top: 1rem;
+                    }
+                    .logo-text > p{
+                      
+                        text-align: center;
+                        
+                        padding: 1rem 0;
+                    }
+                    .cards{
+                        margin: 65px;
+                       justify-content: space-between;
+                    }
+                   .card{
+                       margin-bottom:4rem;
+                   }
+                   #footer{
+                    justify-content: space-around;
+                    letter-spacing: .1rem;
+                    font-size: .6rem;
+                    height: 10vh;
+                    line-height: 4rem;
+                    padding:0;
+                        }
+                }
+                @media screen and (max-width: 667px){
+                    #footer{
+                        justify-content: space-around;
+                        height:20vh;
+                        
+                            } 
+                            .icons >ul{
+                                margin-top: 2rem;
+                            }
+                }
+@media screen and (max-width: 640px){
+    #footer{
+        justify-content: space-around;
+        height: 18vh;
+        margin: 0;
+            }
+            .icons> ul{
+               margin-top:1.9rem; 
+                
+            }
+        }
+        @media screen and (max-width: 411px){
+            #footer{
+                justify-content: space-around;
+                height: 10vh;
+                
+                    }
+                }
+        @media screen and (max-width: 375px){
+            #footer{
+                justify-content: space-around;
+                height: 10vh;
+                margin-top: 0;
+                
+                    }
+                    .icons >ul{
+                        padding-left: .6rem;
+                        margin-top: 1.9rem;
+                    }
+                   
+                }
+                @media screen and (max-width: 320px){
+                    #footer{
+                        justify-content: space-around;
+                        height: 20vh;
+                        margin-top: 0;
+                        
+                            }
+                            .icons> ul{
+                                padding-left: 1rem;
+                            }
+                }
+              
