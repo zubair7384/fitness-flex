@@ -74,7 +74,7 @@ a{
     margin-bottom: 6rem;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-evenly;
 
   }
@@ -91,6 +91,7 @@ a{
   .texts h3{
     font-family: 'Sarala', sans-serif; 
     color: #1d2323;
+    text-align: center;
     font-size: 1.2rem;
     margin:0 3px;
     margin-top: 1rem;
@@ -100,7 +101,10 @@ a{
     color: #1d2323;
     font-size: .9rem;
     line-height: 1.4rem;
-    margin: 1rem 0;}
+    text-align: center;
+    margin: 1rem 0;
+    margin-top: .5rem;
+}
   .card .texts { 
     padding: 0 20px 20px;
   }
@@ -182,11 +186,19 @@ a{
         height: 10vh;
         
             }
+            .card{
+                flex: 0 0 260px;
+                margin: 2rem;
+            }
         }
 @media screen and (max-width: 1024px){
     #footer{
         justify-content: space-around;
         height: 8vh;
+            }
+            .card{
+                flex: 0 0 260px;
+                margin: 6rem;
             }
         }
 @media screen and (max-width: 823px){
@@ -208,6 +220,10 @@ a{
                         justify-content: space-around;
                         height: 5vh;
                         
+                            }
+                            .card{
+                                flex: 0 0 260px;
+                                margin: 2rem;
                             }
                 }
                 @media screen and (max-width: 700px){
@@ -285,14 +301,17 @@ a{
             }
         }
         @media screen and (max-width: 411px){
-            #footer{
-                justify-content: space-around;
-                height: 10vh;
-                
-                    }
-                    .card{
-                        margin-left: 2.6rem;
-                    }
+           
+        
+            .card{
+                flex: 0 0 200px;
+            }
+                    #footer{
+                        justify-content: space-around;
+                        height: 10vh;
+                        
+                            }
+                   
                 }
         @media screen and (max-width: 375px){
             #footer{
@@ -305,6 +324,20 @@ a{
                         padding-left: .6rem;
                         margin-top: 1.9rem;
                     }
+                    .cards {
+                        margin-top: 6rem;
+                        margin-bottom: 6rem;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                    
+                      }
+                    .card{
+                        flex: 0 0 260px;
+                    }
+                   
+                   
                    
                 }
                 @media screen and (max-width: 320px){
