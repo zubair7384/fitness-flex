@@ -226,6 +226,13 @@ a{
                                 margin: 2rem;
                             }
                 }
+                @media screen and (max-width: 736px){
+                    #footer{
+                        justify-content: space-around;
+                        height: 12vh;
+                        
+                            }
+                }
                 @media screen and (max-width: 700px){
                     .parent{
                         position: static;
@@ -264,7 +271,7 @@ a{
                         padding: 1rem 0;
                     }
                     .cards{
-                        margin: 65px;
+                        margin: 43px;
                        justify-content: space-between;
                     }
                    .card{
@@ -303,9 +310,10 @@ a{
         @media screen and (max-width: 411px){
            
         
-            .card{
-                flex: 0 0 200px;
+            .cards{
+                margin: 43px;
             }
+           
                     #footer{
                         justify-content: space-around;
                         height: 10vh;
