@@ -50,6 +50,9 @@ body{
     letter-spacing: .08rem;
     line-height: 2.5rem;
 }
+.nav > ul >li{
+    padding: 1rem;
+}
 a{
     list-style: none;
     text-decoration: none;
