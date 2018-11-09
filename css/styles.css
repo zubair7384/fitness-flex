@@ -28,11 +28,11 @@ body{
     
 }
 .logo-text > p{
+    padding: 0 0 0 .5rem;
     color: #fff;
     font-family: 'Fjalla One', sans-serif;
     line-height: 4.4rem;
     margin: 0;
-    margin-left: 1rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-weight: bold;
@@ -52,7 +52,6 @@ body{
     line-height: 2.5rem;
 }
 a{
-    display: flex;
     list-style: none;
     text-decoration: none;
     color: #fff;
@@ -131,109 +130,82 @@ a{
           .Site-content {
             flex: 1;
           }
+
 #footer{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     background:  #373331;
     color: #fff;
-    font-family: 'Fjalla One', sans-serif;
-    letter-spacing: .1rem;
-    font-size: .8rem;
-    height: 10vh;
-    line-height: 2.7rem;
+    font-family: sans-serif;
+    
+    
    
         }
-        #footer > p{
-            margin-top: .8rem;
-        }
+        
         .icons{
             display: flex;
-            justify-content: flex-start;
-            padding: 0 1rem;
-            letter-spacing: 1rem;
-            font-size: 1.6rem;
-            line-height: 1rem;
+            justify-content: center;
+            font-size: 2rem;
             cursor: pointer;
+            padding:0;
 
         }
         .icons > ul{
+            padding:0;
+            padding-top: 1rem;
             display: flex;
-            margin-top: 1.3rem;
+            word-spacing: .2rem;
+            margin: 0;
         }
         .icons > ul >li{
             display: flex;
-            
+            justify-content: center;
+            list-style-type: none;
+            padding: .4rem;
         }
+        .copy{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            letter-spacing:.1rem;
+            cursor: pointer;
 
-
-@media screen and (max-width: 812px){
-    #footer{
-        justify-content: space-around;
-        height: 15vh;
-        line-height: 2rem;
-        padding:0;
-            }
-            .icons{
-                padding: 0;
-                font-size: 1.2rem;
-                line-height: .9rem;
-            }
         }
+        .copy > ul{
+            padding:1rem 0 0 0;
+            display: flex;
+            word-spacing: .2rem;
+            margin-top: 0;
 
-@media screen and (max-width: 1366px){
-    #footer{
-        justify-content: space-around;
-        height: 10vh;
-        
+        }
+        .copy > ul >li{
+            display: flex;
+            font-size: .8rem;
+        }
+        @media screen and (max-width: 1366px){
+            .cards{
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin-top: 10rem;
+             }
+             .card{
+                 flex-basis: 16rem;
+                 
+             }
+        }
+        @media screen and (min-width: 1024px){
+            .cards{
+                justify-content: center;
+
+                
             }
             .card{
-                flex: 0 0 260px;
                 margin: 2rem;
             }
+
         }
-@media screen and (max-width: 1024px){
-    #footer{
-        justify-content: space-around;
-        height: 8vh;
-            }
-            .card{
-                flex: 0 0 260px;
-                margin: 6rem;
-            }
-        }
-@media screen and (max-width: 823px){
-    #footer{
-        justify-content: space-around;
-        height: 16vh;
-        
-            }
-        }
-        @media screen and (max-width: 812px){
-            #footer{
-                justify-content: space-around;
-                height: 15vh;
-                
-                    }
-                }
-                @media screen and (max-width: 768px){
-                    #footer{
-                        justify-content: space-around;
-                        height: 5vh;
-                        
-                            }
-                            .card{
-                                flex: 0 0 260px;
-                                margin: 2rem;
-                            }
-                }
-                @media screen and (max-width: 736px){
-                    #footer{
-                        justify-content: space-around;
-                        height: 12vh;
-                        
-                            }
-                }
-                @media screen and (max-width: 700px){
+
+                @media screen and (max-width: 850px){
                     .parent{
                         position: static;
                     }
@@ -243,7 +215,7 @@ a{
                     }
                     .nav > ul{
                         flex-direction: column;
-                        justify-content: center;
+                        align-items: center;
                         padding: 0;
                     }
                     .nav > ul > li{
@@ -271,92 +243,20 @@ a{
                         padding: 1rem 0;
                     }
                     .cards{
-                        margin: 43px;
-                       justify-content: space-between;
-                    }
+                        justify-content: space-around;
+                        margin: 3.7rem;
+                     }
                    .card{
                        margin-bottom:4rem;
-                   }
-                   #footer{
-                    justify-content: space-around;
-                    letter-spacing: .1rem;
-                    font-size: .6rem;
-                    height: 10vh;
-                    line-height: 4rem;
-                    padding:0;
-                        }
+
                 }
-                @media screen and (max-width: 667px){
-                    #footer{
-                        justify-content: space-around;
-                        height:20vh;
-                        
-                            } 
-                            .icons >ul{
-                                margin-top: 2rem;
-                            }
+            }
+            @media screen and (max-width: 500px){
+                .cards{
+                    margin-bottom: 1rem;
                 }
-@media screen and (max-width: 640px){
-    #footer{
-        justify-content: space-around;
-        height: 18vh;
-        margin: 0;
             }
-            .icons> ul{
-               margin-top:1.9rem; 
-                
-            }
-        }
-        @media screen and (max-width: 411px){
-           
+
+                   
+                   
         
-            .cards{
-                margin: 43px;
-            }
-           
-                    #footer{
-                        justify-content: space-around;
-                        height: 10vh;
-                        
-                            }
-                   
-                }
-        @media screen and (max-width: 375px){
-            #footer{
-                justify-content: space-around;
-                height: 10vh;
-                margin-top: 0;
-                
-                    }
-                    .icons >ul{
-                        padding-left: .6rem;
-                        margin-top: 1.9rem;
-                    }
-                    .cards {
-                        margin-top: 6rem;
-                        margin-bottom: 6rem;
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        justify-content: center;
-                    
-                      }
-                    .card{
-                        flex: 0 0 260px;
-                    }
-                   
-                   
-                   
-                }
-                @media screen and (max-width: 320px){
-                    #footer{
-                        justify-content: space-around;
-                        height: 20vh;
-                        margin-top: 0;
-                        
-                            }
-                            .icons> ul{
-                                padding-left: 1rem;
-                            }
-                }
-              
