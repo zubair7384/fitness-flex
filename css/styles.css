@@ -28,7 +28,6 @@ body{
     
 }
 .logo-text > p{
-    padding: 0 0 0 .5rem;
     color: #fff;
     font-family: 'Fjalla One', sans-serif;
     line-height: 4.4rem;
@@ -58,10 +57,7 @@ a{
     font-family: 'Sarala', sans-serif;
 }
 
-.nav > ul > li {
-    padding: 1rem;  
-    
-}
+
 .nav > ul > li:hover {
      
     background-color: #b73535;
@@ -217,19 +213,14 @@ a{
                         flex-direction: column;
                         align-items: center;
                         padding: 0;
+                        
                     }
                     .nav > ul > li{
-                        justify-content: center;
-                        padding: 0.2;
-                        
-                
+                        align-items: center;
+                        padding: .7rem 26rem;
                     }
-                    .nav > ul > li > a{
-                        justify-content: center;
-                        padding: 0;
-                        
+                   
                 
-                    }
                    
                     .logo{
                         text-align: center;
@@ -239,8 +230,6 @@ a{
                     .logo-text > p{
                       
                         text-align: center;
-                        
-                        padding: 1rem 0;
                     }
                     .cards{
                         justify-content: space-around;
