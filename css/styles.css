@@ -1,250 +1,108 @@
-/*style*/
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    
-}
-.parent {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    z-index: 1;
-  }
-#header{
-    display: flex;
-    background-color: #373331;
-    justify-content: space-between;
-    flex-basis: 100%;
-    
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/favicon-194x194.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700|Rubik:700|Montserrat" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <title>TNW</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <div id="header-wrapper">
+        <div class="logo">
+          <img src="img/logo-final.png" alt="tnw logo">
+        </div>
+          <div class="nav-wrapper">
+            <div class="ul-wrapper">
+              <ul>
+                <li><a href="#">LATEST</a></li>
+                <li><a href="#">HARD FORK</a></li>
+                <li><a href="#">PLUGGED</a></li>
+                <li><a href="#">THE NEXT POLICE</a></li>
+                <li><a href="#">IOT LAB</a></li>
+                <li><a href="#">INVESTING 2.0</a></li>
+              </ul>
+              <ul class="icons">
+                <li><i class="fab fa-facebook"></i>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fas fa-envelope"></i></li>
+                <li><i class="fas fa-ellipsis-h"></i></li>
+                <li><i class="fas fa-search"></i></li>  
+              </ul>
+            </div>
+         </div>
+    </div>
+  </header>
 
-.logo{
-    padding-left: 3rem;
-    padding-top: 1rem;
-    cursor: pointer;
-    
-}
-.logo-text > p{
-    color: #fff;
-    font-family: 'Fjalla One', sans-serif;
-    line-height: 4.4rem;
-    margin: 0;
-    text-transform: uppercase;
-    padding-left: .7rem;
-    letter-spacing: .2rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-.nav{
-    flex: 3;
-}
-.nav > ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    justify-content: flex-end;
-    padding-right: 3rem;
-    letter-spacing: .08rem;
-    line-height: 2.5rem;
-}
-.nav > ul >li{
-    padding: 1rem;
-}
-.nav > ul >li >a{
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Sarala', sans-serif;
-}
-
-
-.nav > ul > li:hover {
-     
-    background-color: #b73535;
-    transition: 0.8s;
-}
-
-.cards {
-    margin-top: 10rem;
-    margin-bottom: 6rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-
-  }
-  .card {
-    flex: 0 0 260px;
-    margin: 15px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px 0  rgba(0,0,0,0.3);
-    border-radius: .25rem;
-  } 
-  .card img {
-    max-width: 100%;
-  }
-  .texts h3{
-    font-family: 'Sarala', sans-serif; 
-    color: #1d2323;
-    text-align: center;
-    font-size: 1.2rem;
-    margin:0 3px;
-    margin-top: 1rem;
-}
-  .texts p{
-    font-family: 'Sarala', sans-serif; 
-    color: #1d2323;
-    font-size: .9rem;
-    line-height: 1.4rem;
-    text-align: center;
-    margin: 1rem 0;
-    margin-top: .5rem;
-}
-  .card .texts { 
-    padding: 0 20px 20px;
-  }
-  .card .texts > button {
-    background: #373331;
-    font-family: 'Sarala', sans-serif; 
-    border: 0;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    border-radius: .25rem;
-    cursor: pointer;
-    }
-    .card .texts > button:hover {
-        background: #b73535;
-        transition: .7s;
-        
-        } 
-        .Site {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-          }
-          
-          .Site-content {
-            flex: 1;
-          }
-
-#footer{
-    display: flex;
-    flex-direction: column;
-    background:  #373331;
-    color: #fff;
-    font-family: sans-serif;
-    
-    
-   
-        }
-        
-        .icons{
-            display: flex;
-            justify-content: center;
-            font-size: 2rem;
-            cursor: pointer;
-            padding:0;
-
-        }
-        .icons > ul{
-            padding:0;
-            padding-top: 1rem;
-            display: flex;
-            word-spacing: .2rem;
-            margin: 0;
-        }
-        .icons > ul >li{
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            padding: .4rem;
-        }
-        .copy{
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            letter-spacing:.1rem;
-            cursor: pointer;
-
-        }
-        .copy > ul{
-            padding:1rem 0 0 0;
-            display: flex;
-            word-spacing: .2rem;
-            margin-top: 0;
-
-        }
-        .copy > ul >li{
-            display: flex;
-            font-size: .8rem;
-            padding: 0 .2rem;
-        }
-
-    
-        @media screen and (min-width: 1024px){
-            .cards{
-                justify-content: center;
-
-                
-            }
-            .card{
-                margin: 2rem;
-            }
-
-        }
-
-                @media screen and (max-width: 850px){
-                    .parent{
-                        position: static;
-                    }
-                    #header{
-                    flex-direction: column;
-                    
-                    }
-                    .nav > ul{
-                        flex-direction: column;
-                        /* align-items: center; */
-                        text-align: center;
-                        padding: 0;
-                        
-                    }
-                    .nav > ul > li{
-                        /* align-items: center; */
-                        padding: .7rem;
-                    }
-                   
-                
-                   
-                    .logo{
-                        text-align: center;
-                        padding:0;
-                        padding-top: 1rem;
-                    }
-                    .logo-text > p{
-                      
-                        text-align: center;
-                        padding-left: 0;
-                    }
-                    .cards{
-                        justify-content: space-around;
-                        margin: 3.7rem;
-                     }
-                   .card{
-                       margin-bottom:4rem;
-
-                }
-            }
-            @media screen and (max-width: 500px){
-                .cards{
-                    margin-bottom: 1rem;
-                }
-            }
-
-                   
-                   
-        
+    <section class="main-box" id="main-box">
+        <div class="main-heading">
+          <h2> Latest news > </h2>
+       </div>
+      <div class="cards" id="cards">
+          <div class="cards-wrapper">
+              <article class="card">
+              <img src="img/img2.png" alt="Sample photo">
+                <div class="texts">
+                  <h3 >Here's our first glimpse of Harry Potter: Wizards Unite</h3>
+                    <p><span>Callum Booth</span> . 2 hours ago</p>  
+                </div>
+              </article>
+              <article class="card">
+               <img src="img/img3.png" alt="Sample photo">
+                <div class="texts">
+                  <h3>Google's astounding Night Sight is now available for all Pixel phones</h3>
+                   <p><span>Mix </span>. 2 hours ago</p> 
+                </div>
+              </article>
+              <article class="card">
+                <img src="img/img4.png" alt="Sample photo">
+                  <div class="texts">
+                    <h3>Meet the startup that wants to build high-tech electric cars in Brexit Britain</h3>
+                    <p><span>Matthew Hughes</span> . 2 hours ago </p> 
+                </div>
+              </article>
+              <article class="card">
+                <img src="img/img5.png" alt="Sample photo">
+                  <div class="texts">
+                    <h3>How to be a tech evangelist</h3>
+                     <p><span>Georgina Ustik</span> . 2 hours ago </p>
+                  </div> 
+              </article>
+              <article class="card">
+                 <img src="img/img6.png" alt="Sample photo">
+                <div class="texts">
+                  <h3>More malicious cryptocurrency apps found on the Play Store</h3>
+                   <p><span>Malicious Apps</span> . 2 hours ago</p>   
+                </div> 
+              </article>
+              <article class="card">
+                  <img src="img/img7.png" alt="Sample photo">
+                    <div class="texts">
+                      <h3>They’re just like Apple AirPods — except they’re a ton cheaper at $37</h3>
+                        <p><span>Matthew Beedham</span> . 3 hours ago</p>  
+                    </div> 
+              </article>
+              <article class="card">
+                <img src="img/img8.png" alt="Sample photo">
+                  <div class="texts">
+                      <h3>Pick up an all-star roster of high-end Mac apps for $20</h3>
+                      <p><span>TNW Deals</span> . 3 hours ago</p> 
+                  </div> 
+              </article>
+              <article class="card">
+                <img src="img/img9.png" alt="Sample photo">
+                  <div class="texts">
+                    <h3>Be My Eyes app lets you lend your eyes to a blind person in real time</h3>
+                      <p><span>Eyes app</span> . 3 hours ago</p>
+                  </div> 
+                </div>
+              </article>
+      </div>
+    </section>
+</body>
+</html>
